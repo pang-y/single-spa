@@ -1,0 +1,17 @@
+{
+  "name": "container",
+  "private": true,
+  "scripts": {
+    "bootstrap": "npm install && lerna bootstrap",
+    "start": "lerna run serve --parallel",
+    "build": "lerna run build --parallel",
+    "copy": "rimraf docs && node ./copy.js",
+    "build:copy": "npm run build && npm run copy",
+    "clean": "lerna clean --yes && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "lerna": "^3.15.0",
+    "recursive-copy": "^2.0.10"
+  },
+  "license": "MIT"
+}

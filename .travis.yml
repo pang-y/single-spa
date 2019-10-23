@@ -1,0 +1,23 @@
+language: node_js
+
+notifications:
+  email: false
+
+node_js:
+  - "10"
+
+script:
+  - npm run bootstrap && npm run build:example
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: pages
+  local_dir: docs
+  skip_cleanup: true
+  github_token: $CI_TOKEN # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
