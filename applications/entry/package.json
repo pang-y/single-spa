@@ -1,0 +1,29 @@
+{
+  "name": "entry",
+  "version": "0.1.0",
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.1.2",
+    "single-spa": "^4.3.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.4",
+    "@vue/cli-service": "^3.8.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "devPort": 10240,
+  "license": "MIT"
+}
